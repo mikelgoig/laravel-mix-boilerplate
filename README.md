@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 1.  Clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/mgoigfer/laravel-mix-boilerplate.git <project-name> && cd <project-name>
+git clone https://github.com/mgoigfer/laravel-mix-boilerplate.git <project-name> && cd <project-name> && rm -rf .git
 ```
 
 2.  Create a `.env` config file, and fill it with your development environment config:
@@ -64,4 +64,4 @@ npm run prod
 
 ## Authors
 
-- [Mikel Goig](https://github.com/mgoigfer)
+- **Mikel Goig** - [mgoigfer](https://github.com/mgoigfer)
