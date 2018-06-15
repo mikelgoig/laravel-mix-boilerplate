@@ -19,16 +19,7 @@ mix
   .copyDirectory('src/video', 'public/video')
   .copyDirectory('src/fonts', 'public/fonts')
   .sourceMaps()
-  .browserSync({
-    proxy: {
-      target: process.env.APP_URL,
-      reqHeaders() {
-        return {
-          host: 'localhost:3000',
-        };
-      },
-    },
-  });
+  .browserSync(process.env.APP_URL);
 
 /*
  |--------------------------------------------------------------------------
@@ -38,6 +29,8 @@ mix
 
 if (mix.inProduction()) {
   mix
+    .sourceMaps(false)
+    .version()
     .options({
       uglify: {
         uglifyOptions: {
@@ -46,6 +39,5 @@ if (mix.inProduction()) {
           },
         },
       },
-    })
-    .version();
+    });
 }
