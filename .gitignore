@@ -1,0 +1,8 @@
+node_modules/
+public/css
+public/fonts
+public/icon
+public/images
+public/js
+public/video
+.env
