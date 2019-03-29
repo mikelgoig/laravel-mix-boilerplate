@@ -1,21 +1,16 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "laravel-mix-boilerplate",
   "version": "0.1.0",
-  "description": "A webpack boilerplate with separate development and production configurations",
+  "description": "A Laravel Mix boilerplate with separate development and production configurations.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run dev -- --watch",
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mgoigfer/webpack-boilerplate.git"
+    "url": "git+https://github.com/mgoigfer/laravel-mix-boilerplate.git"
   },
   "keywords": [
     "webpack",
@@ -29,20 +24,21 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mgoigfer/webpack-boilerplate/issues"
+    "url": "https://github.com/mgoigfer/laravel-mix-boilerplate/issues"
   },
-  "homepage": "https://github.com/mgoigfer/webpack-boilerplate#readme",
+  "homepage": "https://github.com/mgoigfer/laravel-mix-boilerplate#readme",
   "devDependencies": {
-    "bootstrap": "^4.0.0",
-    "browser-sync": "^2.24.4",
-    "browser-sync-webpack-plugin": "^2.0.1",
-    "cross-env": "^5.2.0",
-    "dotenv": "^6.0.0",
-    "jquery": "^3.3.1",
-    "laravel-mix": "^2.1.11",
-    "node-sass": "^4.9.0"
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "cross-env": "5.2.0",
+    "dotenv": "7.0.0",
+    "laravel-mix": "4.0.15",
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.17.3",
+    "sass-loader": "7.*",
+    "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "popper.js": "^1.14.3"
+    "lodash": "4.17.11"
   }
 }

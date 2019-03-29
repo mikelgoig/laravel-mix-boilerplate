@@ -6,10 +6,6 @@ mix
   .webpackConfig(() => ({
     resolve: {
       modules: ['src/js', 'node_modules'],
-      alias: {
-        scenes: path.resolve(__dirname, 'src/js/scenes/'),
-        services: path.resolve(__dirname, 'src/js/services/'),
-      },
     },
   }))
   .js('src/js/app.js', 'public/js')
@@ -20,6 +16,7 @@ mix
   .copyDirectory('src/fonts', 'public/fonts')
   .sourceMaps()
   .browserSync(process.env.APP_URL);
+
 
 /*
  |--------------------------------------------------------------------------
@@ -32,8 +29,8 @@ if (mix.inProduction()) {
     .sourceMaps(false)
     .version()
     .options({
-      uglify: {
-        uglifyOptions: {
+      terser: {
+        terserOptions: {
           compress: {
             drop_console: true,
           },

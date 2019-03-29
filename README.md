@@ -8,9 +8,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- [nvm](https://github.com/creationix/nvm) >= 0.33.11
-- [Node.js](https://nodejs.org/en/) = lts/carbon (8.11.3)
-- [npm](https://www.npmjs.com/) = 6.1.0
+- [nvm](https://github.com/creationix/nvm) >= 0.34.0
+- [Node.js](https://nodejs.org/en/) = lts/dubnium (10.15.3)
+- [yarn](https://yarnpkg.com) >= 1.15.2
 
 ### Installing
 
@@ -26,16 +26,16 @@ git clone https://github.com/mgoigfer/laravel-mix-boilerplate.git <project-name>
 cp .env.example .env
 ```
 
-3.  Install [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). The following `nvm` commands will install the Node.js version specified at `.nvmrc`:
+3.  Install [Node.js](https://nodejs.org/en/). The following `nvm` commands will install the Node.js version specified at `.nvmrc`:
 
 ```bash
-nvm install && nvm use && npm install -g npm@6.1.0
+nvm install && nvm use
 ```
 
-4.  Install [npm](https://www.npmjs.com/) dependencies:
+4.  Install [yarn](https://yarnpkg.com) dependencies:
 
 ```bash
-npm install
+yarn install
 ```
 
 ## Running in development environment
@@ -43,19 +43,19 @@ npm install
 ### Development mode
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ### Development mode (with browsersync)
 
 ```bash
-npm run watch
+yarn watch
 ```
 
 ### Production mode
 
 ```bash
-npm run prod
+yarn prod
 ```
 
 ## Built With
