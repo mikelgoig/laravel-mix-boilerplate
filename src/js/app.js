@@ -1,12 +1,12 @@
 /* global jQuery */
 
-/* ------------------------------------------------------------------------
+/* -------------------------------------------------------------------------
  * First we will load all of this project's JavaScript dependencies.
- -------------------------------------------------------------------------- */
+ * ------------------------------------------------------------------------- */
 
 import 'bootstrap';
 
-/* ------------------------------------------------------------------------
+/* -------------------------------------------------------------------------
  * DOM-based Routing
  * Based on:
  *  http://goo.gl/EUTi53 by Paul Irish
@@ -18,7 +18,7 @@ import 'bootstrap';
  * .noConflict()
  * The routing is enclosed within an anonymous function so that you can
  * always reference jQuery with $, even when in .noConflict() mode.
- -------------------------------------------------------------------------- */
+ * ------------------------------------------------------------------------- */
 
 (function ($) {
   // Use this variable to set up the common and page specific functions. If you
